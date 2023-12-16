@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => {
                 "/api": {
                     target: "",
                     changeOrigin: true,
-                    rewrite: (path) => path.replace(/\/^api/, ""),
+                    rewrite: (path) => path.replace(/^\/api/, ""),
                 },
             },
         },
